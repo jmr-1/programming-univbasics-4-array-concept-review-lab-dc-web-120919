@@ -30,7 +30,8 @@ end
 def find_min_value(array)
   # Add your solution here
   counter = 0 
-  min_value = nil 
+  min_value = array[0] 
+  #must have an initial minimal value. Nil does not work, arbitrarily large number won't work due to infinite numbers 
  array.length.times do |index|
     puts array[index]
     if array[index] < min_value 
